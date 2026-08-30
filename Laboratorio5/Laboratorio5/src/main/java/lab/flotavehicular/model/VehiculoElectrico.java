@@ -53,8 +53,10 @@ public class VehiculoElectrico extends Vehiculo{
         if (ciclosDeCarga > 1000){
             return "Alerta: Batería muy degradada, requiere reemplazo";
         } else if (porcentajeBateria < 20) {
-            return 
-
+            return "Requiere conexion a estacion de carga";
+        }
+        else {
+            return "Bateria y sistemas optimos";
         }
     }
 }
