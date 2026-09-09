@@ -34,6 +34,9 @@ public class ColaMantenimiento<T extends Vehiculo> {
         vehiculo.setEstado(EstadoVehiculo.TALLER);
         filaDeEspera.offer(vehiculo);
     }
+    public void restaurarPendiente( T vehiculo){
+        if (vehiculo.getEstado() == EstadoVehiculo.TALLER && !filaDeEspera.contains(vehiculo) filaDeEspera.offer(vehiculo));
+    }
 
     public T atenderSiguiente(){
 
@@ -64,3 +67,4 @@ public class ColaMantenimiento<T extends Vehiculo> {
 
 
 }
+

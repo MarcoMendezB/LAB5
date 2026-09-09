@@ -44,8 +44,7 @@ public class VehiculoElectrico extends Vehiculo{
     }
 
     @Override
-
-    public TipoVehiculo fetTipo(){return TipoVehiculo.ELECTRICO;}
+    public TipoVehiculo getTipo(){return TipoVehiculo.ELECTRICO;}
 
     @Override
     public String evaluarEstadoGeneral(){

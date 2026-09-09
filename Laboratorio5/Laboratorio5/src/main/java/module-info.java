@@ -9,6 +9,7 @@ module lab.flotavehicular {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.desktop;
 
     opens lab.flotavehicular to javafx.fxml;
     exports lab.flotavehicular;
